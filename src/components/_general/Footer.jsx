@@ -10,7 +10,7 @@ const FooterComp = () => {
       <div className=" mt-10 flex justify-between items-center " >
           <div className="text-white ">
             <h1 className="font-bold text-2xl " >یادش&</h1>
-            <p className="text-[12px] opacity-60" >آموزش ویدویی آنلاین</p>
+            <p className="text-[12px]" >آموزش ویدویی آنلاین</p>
           </div>
           <div className=" flex ">
             <button className="ml-[1vw] text-white text-[14px] border-[2px]  border-[#00FF85] w-[80px] h-[35px] rounded-md">وارد شوید</button>
@@ -82,7 +82,7 @@ const FooterComp = () => {
             <h1 className="flex"><div className="bg-[#00FF85] w-[6px] h-[15px] rounded-sm ml-2"></div>با ما در تماس باشید </h1>
             <p>77132376</p>
           </div>
-          <div className="opacity-70 text-[10px]">
+          <div className=" text-[10px]">
             <p>info@yadesh.com</p>
             <p className="w-[19vw]">تهران خیابان انقلاب اسلامی خیابان کارگر شمالی پلاک 42 واحد 2</p>
           </div>
