@@ -1,6 +1,7 @@
 import React from "react";
 import {useSelector, useDispatch} from "react-redux";
 import {userSelect} from "../state/Slice";
+
 import AboutComp from "../components/home/About";
 import CustomersComp from "../components/home/Customers";
 import EnterpriseComp from "../components/home/Enterprise";
@@ -12,6 +13,9 @@ import MyPopularLessonsComp from "../components/home/MyPopularLessons";
 import PopularCoursesComp from "../components/home/PopularCourses";
 import PopularLessonsComp from "../components/home/PopularLessons";
 
+import EditProfileModal from "../components/_general/EditProfile";
+import MyNotesModal from "../components/_general/MyNotes";
+
 const HomePage = () => {
   const currentUser = useSelector(userSelect);
   const dispatch = useDispatch();
@@ -19,6 +23,8 @@ const HomePage = () => {
   return currentUser !== null ? (
     <>
       <HomeHeroLoggedComp />
+      <EditProfileModal />
+      <MyNotesModal />
       <PopularCoursesComp />
       <AboutComp />
       <MostViewedComp />
@@ -28,6 +34,7 @@ const HomePage = () => {
   ) : (
     <>
       <HomeHeroComp />
+      <EditProfileModal />
       <KeepLearningComp />
       <MostViewedComp />
       <PopularLessonsComp />
