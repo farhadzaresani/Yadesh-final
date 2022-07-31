@@ -8,14 +8,14 @@ import WatchedComp from "../components/progress/Watched";
 
 const ProgressPage = () => {
   return (
-    <>
+    <div >
       <UserProgressComp />
       <ProgressCoursesComp />
       <NotesComp />
       <ProgressListComp />
       <WatchedComp />
       <CompletedComp />
-    </>
+    </div>
   );
 };
 

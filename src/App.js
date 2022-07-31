@@ -14,6 +14,7 @@ import VideoEpisodePage from "./pages/VideoEpisode";
 import CoursePage from "./pages/Course";
 import LoginPage from "./pages/Login";
 import NotFoundPage from "./pages/NotFound";
+import ProgressPage from './pages/Progress'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='video-course' element={<VideoCoursePage />} />
             <Route path='video-episode' element={<VideoEpisodePage />} />
             <Route path='course' element={<CoursePage />} />
+            <Route path='progress' element={<ProgressPage/>} />
           </Route>
 
           <Route path='/nofooter/' element={<NavLayout />}>
