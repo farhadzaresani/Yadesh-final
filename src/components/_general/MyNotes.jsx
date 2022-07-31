@@ -5,17 +5,17 @@ import * as AiIcons from "react-icons/ai";
 const MyNotesModal = () => {
   const [showMyNotesModal, setMyNotesModal] = useState(false);
   return (
-    <>
+    <div className='relative w-full h-full z-0'>
       <button
-        className='bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
+        className='text-white bg-[#002433] w-[118px] h-[35px] rounded-[4px] text-[12px]'
         type='button'
         onClick={() => setMyNotesModal(true)}>
-        Open My Notes
+        یادداشتهای من
       </button>
 
       {showMyNotesModal ? (
         <>
-          <div className='flex justify-center items-center'>
+          <div className='absolute flex justify-center items-center z-10'>
             <div className='relative w-[888px] h-[468px] bg-[#f5f5f5] rounded-[10px]'>
               <div className='flex justify-between items-center'>
                 <div className='flex items-center mt-[4%] mr-[4.6%] text-[#002433]'>
@@ -68,7 +68,7 @@ const MyNotesModal = () => {
           </div>
         </>
       ) : null}
-    </>
+    </div>
   );
 };
 

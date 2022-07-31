@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import EpisodeCard from "../_cards/EpisodeCard";
+import VideoCards from "../_cards/VideoCards";
 
 const WatchedComp = () => {
   const ref=useRef(null)
@@ -15,8 +15,8 @@ const WatchedComp = () => {
     <div className="flex items-center justify-between px-10">
       <div className='mb-6'>
       <h1 className="flex text-white items-center text-[22px] font-bold z-10 mb-4"><div className="bg-[#00FF85] w-[6px] h-[15px] rounded-sm ml-2">
-        </div>   یادداشت های من</h1>
-      <p className="text-[#C4C4C4] text-[15px]" >یادداشت های شما روی ویدیو ها</p>
+        </div>  قبلا دیده اید</h1>
+      <p className="text-[#C4C4C4] text-[15px]" >    ویدیو هایی که قبلا تماشا کرده اید</p>
       </div>
       <div className="flex gap-1">
         <button onClick={() => scroll(+200)} className="bg-[#002433] w-[2vw] h-[2vw] rounded-md text-white">{'<'} </button>
@@ -25,15 +25,15 @@ const WatchedComp = () => {
     </div>
 <div className="flex gap-4   overflow-hidden " ref={ref}>
 
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
-    <EpisodeCard/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
+    <VideoCards/>
 </div>
 
 
