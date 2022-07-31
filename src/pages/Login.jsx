@@ -4,10 +4,10 @@ import LoginSideComp from "../components/login/Side";
 
 const LoginPage = () => {
   return (
-    <>
-      <LoginFormComp />
+    <div className='flex gap-60 px-16'>
       <LoginSideComp />
-    </>
+      <LoginFormComp />
+    </div>
   );
 };
 
