@@ -5,13 +5,17 @@ function VideoCards() {
   return (
     <div>
 
-    <div className=" w-[20vw] text-white flex flex-col rounded-lg">
-        <ReactPlayer
+    <div className="  text-white flex flex-col rounded-lg" >
+        {/* <ReactPlayer
             className='react-player '
             url=''
             width='100%'
             height='100%'
-          />
+          /> */}
+
+
+<img className='' src={"/assets/images/Mask Group.png"} alt='dot' />
+
           <div>
             افتصاد خرد
           </div>
