@@ -4,10 +4,12 @@ import SignupSideComp from "../components/signup/Side";
 
 const SignupPage = () => {
   return (
-    <>
+    <div className=' flex bg-white'>
       <SignupSideComp />
-      <SignupFormComp />
-    </>
+      <div className='flex items-center justify-center'>
+        <SignupFormComp />
+      </div>
+    </div>
   );
 };
 

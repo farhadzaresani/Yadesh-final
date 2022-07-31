@@ -10,7 +10,7 @@ const NavbarComp = () => {
   };
 
   return (
-    <div className='flex  h-[56px] sticky top-0 bg-black-rgba items-center justify-between px-10'>
+    <div className='flex  h-[56px] sticky top-0 bg-black-rgba items-center justify-between px-10 z-20'>
       <div className='flex items-center justify-between w-[19vw]'>
         {showSidebar ? (
           <Menu

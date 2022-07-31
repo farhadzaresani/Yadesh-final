@@ -8,6 +8,14 @@ const PopCourseCardLarge = () => {
         src={"/assets/images/episodecard.png"}
         alt=''
       />
+      <div className='absolute top-2 left-2 flex items-center justify-center gap-1 w-[70px] h-[35px] bg-[#002433] rounded-md'>
+        <img src={"/assets/images/eye.png"} alt='eye' />
+        <p className='text-sm text-[#E6FFF3]'>631</p>
+      </div>
+      <div className='absolute top-2 right-2 flex items-center justify-center gap-1 w-[159px] h-[35px] bg-[#002433] rounded-md'>
+        <img src={"/assets/images/clock.png"} alt='eye' />
+        <p className='text-sm text-[#E6FFF3]'>3 ساعت و 46 دقیقه</p>
+      </div>
       <div className='absolute flex px-2 mt-2 w-full h-[160px] bottom-0 overflow-hidden rounded-lg backdrop-blur-lg'>
         <div className='flex flex-col gap-2'>
           <div className='flex items-center gap-3'>
