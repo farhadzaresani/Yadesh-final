@@ -20,49 +20,55 @@ const HomePage = () => {
   console.log(currentUser);
 
   return (
-    <div className='flex flex-col px-20'>
-      <div>
-        <img
-          className='absolute w-[562px] h-[562px] left-[686px] top-[121px] blur-[330px]'
-          src={"/assets/images/Ellipse79.png"}
-          alt=''
-        />
-        <img
-          className='absolute w-[328px] h-[328px] left-[-4px] top-[880px] blur-[330px]'
-          src={"/assets/images/Ellipse79.png"}
-          alt=''
-        />
-        <img
-          className='absolute w-[328px] h-[328px] left-[838px] top-[1383px] blur-[330px]'
-          src={"/assets/images/Ellipse79.png"}
-          alt=''
-        />
-        <img
-          className='absolute w-[400px] h-[249px] left-[180px] top-[2996px] blur-[330px]'
-          src={"/assets/images/Rectangle899.png"}
-          alt=''
-        />
-      </div>
+    <>
+      {currentUser === null ? (
+        <div className='flex flex-col px-20'>
+          <div>
+            <img
+              className='absolute w-[562px] h-[562px] left-[686px] top-[121px] blur-[330px]'
+              src={"/assets/images/Ellipse79.png"}
+              alt=''
+            />
+            <img
+              className='absolute w-[328px] h-[328px] left-[-4px] top-[880px] blur-[330px]'
+              src={"/assets/images/Ellipse79.png"}
+              alt=''
+            />
+            <img
+              className='absolute w-[328px] h-[328px] left-[838px] top-[1383px] blur-[330px]'
+              src={"/assets/images/Ellipse79.png"}
+              alt=''
+            />
+            <img
+              className='absolute w-[400px] h-[249px] left-[180px] top-[2996px] blur-[330px]'
+              src={"/assets/images/Rectangle899.png"}
+              alt=''
+            />
+          </div>
 
-      {currentUser !== {} ? (
-        <div className='flex flex-col gap-20'>
-          <HomeHeroComp />
-          <PopularCoursesComp />
-          <AboutComp />
-          <MostViewedComp />
-          <CustomersComp />
-          <EnterpriseComp />
+          <div className='flex flex-col gap-20'>
+            <HomeHeroComp />
+            <PopularCoursesComp />
+            <AboutComp />
+            <MostViewedComp />
+            <CustomersComp />
+            <EnterpriseComp />
+          </div>
         </div>
       ) : (
         <>
-          <HomeHeroLoggedComp />
+          <div className='flex flex-col px-20'>
+            <HomeHeroLoggedComp />
+          </div>
           <KeepLearningComp />
-          <MostViewedComp />
-          <PopularLessonsComp />
-          <MyPopularLessonsComp />
+          <div className='flex flex-col px-20'>
+            <MostViewedComp />
+            <PopularLessonsComp />
+            <MyPopularLessonsComp />
+          </div>
         </>
       )}
-    </div>
+    </>
   );
 };
 
