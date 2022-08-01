@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom";
 import * as BsIcons from "react-icons/bs";
 
 const HomeHeroComp = () => {
@@ -24,12 +24,16 @@ const HomeHeroComp = () => {
           بیش از هزاران ویدیوی آموزشی برای شما از بروزترین منابع دنیا
         </p>
         <div className='flex gap-4 mt-[30px]'>
-          <button className='text-[#E6E9EB] w-[150px] h-[46px] rounded-md border-2 border-solid border-[#80FFC2]'>
-            بیشتر بدانید
-          </button>
-          <button className='bg-[#00FF85] w-[150px] h-[46px] rounded-md'>
-            ثبت نام
-          </button>
+          <Link to={"/about"}>
+            <button className='text-[#E6E9EB] w-[150px] h-[46px] rounded-md border-2 border-solid border-[#80FFC2]'>
+              بیشتر بدانید
+            </button>
+          </Link>
+          <Link to={"/signup"}>
+            <button className='bg-[#00FF85] w-[150px] h-[46px] rounded-md'>
+              ثبت نام
+            </button>
+          </Link>
         </div>
         <div className='flex flex-col mt-10 gap-3'>
           <div className='flex items-center gap-4'>

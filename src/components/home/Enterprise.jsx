@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom";
 
 const EnterpriseComp = () => {
   return (
@@ -13,9 +13,11 @@ const EnterpriseComp = () => {
           پلن ویژه آموزش یادش برای آموزش مهارتها استفاده کنند.
         </p>
         <div className='flex gap-4 mt-[30px]'>
-          <button className='text-[#E6E9EB] w-[150px] h-[46px] rounded-md border-2 border-solid border-[#80FFC2]'>
-            بیشتر بدانید
-          </button>
+          <Link to={"/for-business"}>
+            <button className='text-[#E6E9EB] w-[150px] h-[46px] rounded-md border-2 border-solid border-[#80FFC2]'>
+              بیشتر بدانید
+            </button>
+          </Link>
         </div>
       </div>
     </div>

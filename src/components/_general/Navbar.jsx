@@ -1,4 +1,5 @@
-import React,{useState} from "react";
+import {useState} from "react";
+import {Link} from "react-router-dom";
 import LanguageDropDownComp from "./LanguageDropDown";
 import Menu from "./Menu";
 import MyNotesModal from "./MyNotes";
@@ -7,7 +8,7 @@ const NavbarComp = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const openClose = () => {
-    setShowSidebar((!showSidebar));
+    setShowSidebar(!showSidebar);
   };
 
   return (
@@ -36,10 +37,12 @@ const NavbarComp = () => {
             alt=''
           />
 
-          <button className='flex gap-2 items-center px-2 text-white bg-[#002433] w-[200px] h-[35px] rounded-[4px] text-[12px]'>
-            <img src={"/assets/images/rocket.png"} alt='' />
-            پیشرفت من
-          </button>
+          <Link to={"/progress"}>
+            <button className='flex gap-2 items-center justify-center px-2 text-white bg-[#002433] w-[150px] h-[35px] rounded-[4px] text-[12px]'>
+              <img src={"/assets/images/rocket.png"} alt='' />
+              پیشرفت من
+            </button>
+          </Link>
 
           <div className='mr-3'>
             <MyNotesModal />

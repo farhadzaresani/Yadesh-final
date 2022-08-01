@@ -1,13 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-const MenuModal = ({setShowSidebar,showSidebar}) => {
+const MenuModal = ({setShowSidebar, showSidebar}) => {
   return (
     <div className='flex flex-col items-start fixed top-0 text-white right-0 z-30 rounded-b-md bg-light-black h-[30vw]  w-full'>
       <div className=' w-[60vw] h-[60vw] justify-between flex flex-col   m-5'>
         <div className=' '>
           <h1 className='font-bold text-2xl '>
-            {" "}
             <img
               className='w-20 h-6'
               src={"/assets/images/HorizentalLightLogo.png"}
@@ -16,7 +14,6 @@ const MenuModal = ({setShowSidebar,showSidebar}) => {
           </h1>
           <p className='text-[12px] opacity-60'>آموزش ویدویی آنلاین</p>
         </div>
-
         <div className='flex items-center'>
           <h1>منو سایت</h1>
           <div className='h-[2px] w-[30vw] bg-gradient-to-l from-[#00FF85] opacity-30 mr-5'></div>
@@ -25,31 +22,26 @@ const MenuModal = ({setShowSidebar,showSidebar}) => {
           <Link
             className=' flex items-center justify-center h-[3vw] w-[7vw] rounded-md'
             to='/'>
-            {" "}
             پنل کاربری
           </Link>
           <Link
             className=' flex items-center justify-center h-[3vw] w-[7vw] rounded-md'
-            to='/'>
-            {" "}
+            to='/profile'>
             پروفایل کاربری
           </Link>
           <Link
             className='bg-[#000E14] flex items-center justify-center h-[3vw] w-[6vw] rounded-md'
-            to='/'>
-            {" "}
-            پیشرفت من{" "}
+            to='/progress'>
+            پیشرفت من
           </Link>
           <Link
             className=' flex items-center justify-center h-[3vw] w-[7vw] rounded-md'
-            to='/'>
-            {" "}
+            to='/about'>
             درباره ما
           </Link>
           <Link
             className=' flex items-center justify-center h-[3vw] w-[7vw] rounded-md'
-            to='/'>
-            {" "}
+            to='/contact-support'>
             پشتیبانی
           </Link>
         </div>

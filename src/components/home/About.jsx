@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom";
 
 const AboutComp = () => {
   return (
@@ -16,13 +16,14 @@ const AboutComp = () => {
           یادش یک پلتفرم آموزشی برای شرکتها، اساتید، مدیران تولید محتوا و افراد
           است که دسترسی به ویدیوهای آموزشی را برای کاربران آسانتر کرده است.
         </p>
-        <button className='mt-8 text-[#E6FFF3] border-2 border-solid border-[#80FFC2] w-[160px] h-[46px] rounded-md'>
-          بیشتر بدانید
-        </button>
+        <Link to={"/about"}>
+          <button className='mt-8 text-[#E6FFF3] border-2 border-solid border-[#80FFC2] w-[160px] h-[46px] rounded-md'>
+            بیشتر بدانید
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default AboutComp;
- 

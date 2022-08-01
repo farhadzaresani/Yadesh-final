@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import LanguageDropDownComp from "./LanguageDropDown";
 
 const FooterComp = () => {
@@ -19,9 +18,11 @@ const FooterComp = () => {
             <p className='text-[12px]'>آموزش ویدویی آنلاین</p>
           </div>
           <div className=' flex '>
-            <button className='ml-[1vw] text-white text-[14px] border-[2px]  border-[#00FF85] w-[80px] h-[35px] rounded-md'>
-              وارد شوید
-            </button>
+            <Link to={"/ly/login"}>
+              <button className='ml-[1vw] text-white text-[14px] border-[2px]  border-[#00FF85] w-[80px] h-[35px] rounded-md'>
+                وارد شوید
+              </button>
+            </Link>
             <LanguageDropDownComp />
           </div>
         </div>
@@ -47,7 +48,7 @@ const FooterComp = () => {
                     </Link>
                     <Link
                       className=' flex items-center justify-center  h-[3vw] w-[8vw] rounded-md'
-                      to='/'>
+                      to='/profile'>
                       پروفایل کاربری
                     </Link>
                     <Link
@@ -57,19 +58,19 @@ const FooterComp = () => {
                     </Link>
                     <Link
                       className=' flex items-center justify-center h-[3vw] w-[10vw] rounded-md'
-                      to='/'>
+                      to='/video-episode'>
                       پلی لیست های من
                     </Link>
                   </div>
                   <div className='flex flex-col text-white items-start text-opacity-70 text-[10px] space-y-3'>
                     <Link
                       className='flex items-center justify-center h-[3vw] w-[6vw] rounded-md'
-                      to='/'>
+                      to='/about'>
                       درباره ما
                     </Link>
                     <Link
                       className=' flex items-center justify-center h-[3vw] w-[6vw] rounded-md'
-                      to='/'>
+                      to='/contact-support'>
                       پشتیبانی
                     </Link>
                   </div>
