@@ -21,7 +21,7 @@ const HomePage = () => {
 
   return (
     <>
-      {currentUser === null ? (
+      {currentUser !== null ? (
         <div className='flex flex-col px-20'>
           <div>
             <img

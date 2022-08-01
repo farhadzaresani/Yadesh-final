@@ -10,7 +10,7 @@ const SignupPage = () => {
         <SignupFormComp />
       </div>
     </div>
-  );
+  ); 
 };
 
 export default SignupPage;

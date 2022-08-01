@@ -31,12 +31,11 @@ function App() {
             <Route path='video-course' element={<VideoCoursePage />} />
             <Route path='video-episode' element={<VideoEpisodePage />} />
             <Route path='course' element={<CoursePage />} />
-            <Route path='progress' element={<ProgressPage/>} />
+            <Route path='progress' element={<ProgressPage />} />
           </Route>
 
-          <Route path='/nofooter/' element={<NavLayout />}>
+          <Route path='/ly/' element={<NavLayout />}>
             <Route path='login' element={<LoginPage />} />
-            <Route path='notfound' element={<NotFoundPage />} />
           </Route>
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
