@@ -1,5 +1,6 @@
 import React,{useState} from "react";
-import Menu from './Menu'
+import LanguageDropDownComp from "./LanguageDropDown";
+import Menu from "./Menu";
 import MyNotesModal from "./MyNotes";
 
 const NavbarComp = () => {
@@ -28,30 +29,37 @@ const NavbarComp = () => {
           </div>
         )}
 
-        <div className='text-white'>یادش&</div>
-        <div className='flex gap-2 mx-2'>
-          <button className='text-white bg-[#002433] w-[118px] h-[35px] rounded-[4px] text-[12px]'>
+        <div className='flex items-center gap-2 mx-2'>
+          <img
+            className='w-20 h-6'
+            src={"/assets/images/HorizentalLightLogo.png"}
+            alt=''
+          />
+
+          <button className='flex gap-2 items-center px-2 text-white bg-[#002433] w-[200px] h-[35px] rounded-[4px] text-[12px]'>
+            <img src={"/assets/images/rocket.png"} alt='' />
             پیشرفت من
           </button>
-          <MyNotesModal />
+
+          <div className='mr-3'>
+            <MyNotesModal />
+          </div>
         </div>
       </div>
 
-      <div className=''>
-        <input
-          className='ml-3 w-[120px] text-[12px] bg-[#001D29] h-[35px] rounded-[4px]'
-          type='text'
-          placeholder='؟جستوجو کنید'
-        />
+      <div className='flex items-center'>
+        <div className='relative'>
+          <input
+            className='block ml-3 pr-10 w-[120px] text-[12px] bg-[#001D29] h-[35px] rounded-[4px]'
+            type='text'
+            placeholder='جستجو کنید'
+          />
+          <div className='flex absolute inset-y-0 right-0 items-center pr-3 pointer-events-none'>
+            <img src={"/assets/images/search.png"} alt='' />
+          </div>
+        </div>
 
-        <select
-          className=' w-[45px] h-[35px] rounded-md bg-[#001D29] text-white'
-          name='languages'
-          size={1}>
-          <option value='ir'> IR </option>
-          <option value='ar'> AR </option>
-          <option value='en'> EN </option>
-        </select>
+        <LanguageDropDownComp />
       </div>
     </div>
   );

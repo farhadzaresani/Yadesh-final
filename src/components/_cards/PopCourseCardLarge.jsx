@@ -16,7 +16,7 @@ const PopCourseCardLarge = () => {
         <img src={"/assets/images/clock.png"} alt='eye' />
         <p className='text-sm text-[#E6FFF3]'>3 ساعت و 46 دقیقه</p>
       </div>
-      <div className='absolute flex px-2 mt-2 w-full h-[160px] bottom-0 overflow-hidden rounded-lg backdrop-blur-lg'>
+      <div className='absolute flex px-2 mt-2 w-full h-[160px] bottom-0 overflow-hidden rounded-lg bg-gradient-to-t from-[#002433]'>
         <div className='flex flex-col gap-2'>
           <div className='flex items-center gap-3'>
             <div className='bg-[#00CC6A] w-2 h-5 rounded-xl '></div>

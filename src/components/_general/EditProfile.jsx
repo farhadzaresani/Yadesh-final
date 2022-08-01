@@ -4,19 +4,19 @@ import * as AiIcons from "react-icons/ai";
 const EditProfileModal = () => {
   const [showEditProfileModal, setShowEditProfileModal] = useState(false);
   return (
-    <>
+    <div className='relative w-full h-full z-0'>
       <button
         className='bg-[#002433] text-white active:bg-gray-500 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150'
         type='button'
         onClick={() => setShowEditProfileModal(true)}>
-        ویرایش پروفایل  
+        ویرایش پروفایل
       </button>
 
       {showEditProfileModal ? (
         <>
-          <div className='flex justify-center items-center'>
+          <div className='absolute flex justify-center items-center'>
             <div className='relative w-[650px] h-[748px] bg-[#f5f5f5] rounded-[10px]'>
-              <div className='flex justify-between'>
+              <div className='flex justify-between items-center'>
                 <div className='mt-[4%] mr-[4.6%] text-[#002433]'>
                   <p className='font-medium text-xl leading-10 '>
                     پروفایل خود را کامل کنید
@@ -88,7 +88,7 @@ const EditProfileModal = () => {
           </div>
         </>
       ) : null}
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import {useState} from "react";
 import * as AiIcons from "react-icons/ai";
-
+import * as BsIcons from "react-icons/bs";
 
 const MyNotesModal = () => {
   const [showMyNotesModal, setMyNotesModal] = useState(false);
@@ -51,7 +51,7 @@ const MyNotesModal = () => {
                     <div className='border-2 border-solid border-[#C4C4C4] opacity-40 w-[616px] h-0 mx-auto my-5 '></div>
                   </div>
                   <button className='flex justify-center items-center gap-2 h-12 w-36 bg-[#C4C4C4] hover:bg-gray-300 transition-all rounded-md font-bold text-sm text-[#002433]'>
-                    {/* <BsIcons.BsFillPlayFill className='text-xl' /> */}
+                    <BsIcons.BsFillPlayFill className='text-xl' />
                     پخش درس
                   </button>
                 </div>

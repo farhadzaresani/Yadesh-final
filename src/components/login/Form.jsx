@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginFormComp = () => {
   return (
-    <div className='relative flex flex-col w-[450px] h-[570px]'>
+    <div className='relative flex flex-col w-[450px] h-[570px] mt-12'>
       <div className='flex flex-col'>
         <div>
           <p className='text-2xl font-bold text-[#E6FFF3] leading-10'>

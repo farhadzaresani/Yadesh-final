@@ -8,7 +8,7 @@ const PopCourseCard = () => {
         src={"/assets/images/popcourseimg.png"}
         alt=''
       />
-      <div className='absolute flex px-2 justify-center items-center w-[180px] h-[160px] bottom-0 overflow-hidden rounded-lg backdrop-blur-sm'>
+      <div className='absolute flex px-2 justify-center items-center w-[180px] h-[160px] bottom-0 overflow-hidden rounded-lg bg-gradient-to-t from-[#002433]'>
         <div className='flex flex-col gap-2'>
           <p className='text-xl text-[#E6FFF3] text-center'>روانشناسی رنگ ها</p>
           <p className='text-sm text-[#C4C4C4] text-center'>27 اپیزود</p>
