@@ -3,9 +3,9 @@ import ReactPlayer from 'react-player'
 
 function VideoCards() {
   return (
-    <div>
+    <div className=''>
 
-    <div className="  text-white flex flex-col rounded-lg" >
+    <div className="  text-white flex flex-col rounded-lg w-[219px] h-[216px]" >
         {/* <ReactPlayer
             className='react-player '
             url=''

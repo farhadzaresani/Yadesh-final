@@ -7,7 +7,7 @@ const NavbarComp = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const openClose = () => {
-    setShowSidebar((showSidebar = false));
+    setShowSidebar((!showSidebar));
   };
 
   return (
