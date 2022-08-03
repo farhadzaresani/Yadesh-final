@@ -2,7 +2,7 @@ import React from "react";
 
 const AdvantagesComp = () => {
   return (
-    <div className='flex flex-col w-[1430px] h-[500px] pr-[556px] mt-40'>
+    <div className='flex flex-col  h-[500px] pr-[556px] mt-40'>
       <div className='flex items-center gap-3'>
         <div className='bg-[#00CC6A] w-2 h-5 rounded-xl '></div>
         <p className='text-[#E6FFF3] text-2xl font-bold'>

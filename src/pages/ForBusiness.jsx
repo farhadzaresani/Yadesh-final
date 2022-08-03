@@ -9,19 +9,8 @@ import TestimonialsComp from "../components/forbusiness/Testimonials";
 const ForBusinessPage = () => {
   return (
     <>
-      <div>
-        <img
-          className='absolute w-[456px] h-[456px] left-[848px] top-[1912px] blur-xl'
-          src={"/assets/images/Ellipse79.png"}
-          alt=''
-        />
-        <img
-          className='absolute w-auto h-[343px] top-[1954px]'
-          src={"/assets/images/vector252.png"}
-          alt=''
-        />
-      </div>
-      <div className='px-20'>
+
+      <div className='px-20 '>
         <ForBusinessHeroComp />
         <TeachersComp />
       </div>

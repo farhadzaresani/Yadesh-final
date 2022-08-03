@@ -2,7 +2,7 @@ import React from "react";
 
 const ForBusinessHeroComp = () => {
   return (
-    <div>
+    <div className="">
       <div className='flex flex-col items-center justify-center mt-24 z-30'>
         <p className='text-[#E6FFF3] text-4xl'>یادگیری در سطح جهانی</p>
         <p className='text-[#C4C4C4] text-xl text-center mt-3 w-[467px] leading-10'>
@@ -24,17 +24,21 @@ const ForBusinessHeroComp = () => {
         <img src={"/assets/images/ver-line.png"} alt='' />
         <img src={"/assets/images/ver-arrow.png"} alt='' />
       </div>
+   
       {/* <div className='absolute top-0 right-0 w-full h-[600px] bg-gradient-to-t from-[#000405] to-[#00040500] z-20'></div> */}
+     <div className=" absolute right-[-5vw] top-20 flex z-20 opacity-30 ">
+
       <img
-        className='absolute left-[1059px] top-[102px]'
+        className='   ml-[20vw]'
         src={"/assets/images/forbusinessHeroside.png"}
         alt='hero-right'
       />
       <img
-        className='absolute left-[486px] top-[102px] w-[348px] h-[175px]'
+        className='  w-[348px] h-[175px]'
         src={"/assets/images/forbusinessHero.png"}
         alt='hero-center'
-      />
+        />
+        </div>
     </div>
   );
 };
